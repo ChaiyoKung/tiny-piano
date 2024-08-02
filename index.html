@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style/desktop.css">
+    <audio id="piano_C4" src="sound-piano/pianoC4.mp3"></audio>
+    <audio id="piano_Cs4" src="sound-piano/pianoCs4.mp3"></audio>
+    <audio id="piano_D4" src="sound-piano/pianoD4.mp3"></audio>
+    <audio id="piano_Eb4" src="sound-piano/pianoEb4.mp3"></audio>
+    <audio id="piano_E4" src="sound-piano/pianoE4.mp3"></audio>
+    <audio id="piano_F4" src="sound-piano/pianoF4.mp3"></audio>
+    <audio id="piano_Fs4" src="sound-piano/pianoFs4.mp3"></audio>
+    <audio id="piano_G4" src="sound-piano/pianoG4.mp3"></audio>
+    <audio id="piano_Gs4" src="sound-piano/pianoGs4.mp3"></audio>
+    <audio id="piano_A4" src="sound-piano/pianoA4.mp3"></audio>
+    <audio id="piano_Bb4" src="sound-piano/pianoBb4.mp3"></audio>
+    <audio id="piano_B4" src="sound-piano/pianoB4.mp3"></audio>
+    <audio id="piano_C5" src="sound-piano/pianoC5.mp3"></audio>
+    <audio id="piano_Cs5" src="sound-piano/pianoCs5.mp3"></audio>
+    <audio id="piano_D5" src="sound-piano/pianoD5.mp3"></audio>
+    <audio id="piano_Eb5" src="sound-piano/pianoEb5.mp3"></audio>
+    <audio id="piano_E5" src="sound-piano/pianoE5.mp3"></audio>
+</head>
+
+<body onkeypress="play(event)">
+    <div id="bg_top">
+        <img src="https://cdn.pixabay.com/photo/2012/04/13/00/39/piano-31357_960_720.png" alt="animal">
+    </div>
+    <div id="bg_bottom">
+        <h1>Piano</h1>
+        <div class="flexible">
+            <div id="left">
+                <div class="top">
+                    <input id="btCs4" type="button" value="s">
+                    <input id="btEb4" type="button" value="d">
+                </div>
+                <div class="bottom">
+                    <input id="btC4" type="button" value="z">
+                    <input id="btD4" type="button" value="x">
+                    <input id="btE4" type="button" value="c">
+                </div>
+            </div>
+            <div id="middle">
+                <div class="top">
+                    <input id="btFs4" type="button" value="g">
+                    <input id="btGs4" type="button" value="h">
+                    <input id="btBb4" type="button" value="j">
+                </div>
+                <div class="bottom">
+                    <input id="btF4" type="button" value="v">
+                    <input id="btG4" type="button" value="b">
+                    <input id="btA4" type="button" value="n">
+                    <input id="btB4" type="button" value="m">
+                </div>
+            </div>
+            <div id="right">
+                <div class="top">
+                    <input id="btCs5" type="button" value="l">
+                    <input id="btEb5" type="button" value=";">
+                </div>
+                <div class="bottom">
+                    <input id="btC5" type="button" value=",">
+                    <input id="btD5" type="button" value=".">
+                    <input id="btE5" type="button" value="/">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/piano.js"></script>
+</body>
+
+</html>
